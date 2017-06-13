@@ -1016,10 +1016,11 @@ abstract class ArcanistWorkflow extends Phobject {
           $api->stashChanges();
           $this->stashed = true;
         } else {
-          throw new ArcanistUsageException(
-            pht(
-              'You can not continue with uncommitted changes. '.
-              'Commit or discard them before proceeding.'));
+          // I will assume you are an adult
+          // throw new ArcanistUsageException(
+          //   pht(
+          //     'You can not continue with uncommitted changes. '.
+          //     'Commit or discard them before proceeding.'));
         }
       }
     }
